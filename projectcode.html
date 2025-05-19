@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood Mode</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    /* Navigation bar */
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      background-color: #6c63ff;
+      padding: 25px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    /* Home Page */
+    .home {
+      padding: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 30px;
+    }
+
+    .left-section {
+      max-width: 50%;
+    }
+
+    .description {
+      margin-bottom: 40px;
+      font-weight: 600;
+      line-height: 1.7;
+    }
+
+    .recommend-btn {
+      padding: 20px 40px;
+      background-color: #6c63ff;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      font-size: 26px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+
+    .recommend-btn:hover {
+      background-color: #5548d4;
+      transform: translateY(-8px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .photo-box {
+      width: 500px;
+      height: 500px;
+      background-color: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: #333;
+      border-radius: 15px;
+    }
+
+    /* My Profile Page */
+    .profile {
+      padding: 40px;
+    }
+
+    /* Archive Page */
+    .archive {
+      padding: 40px;
+    }
+
+    .chart {
+      width: 100%;
+      height: 200px;
+      background-color: #eee;
+      margin-bottom: 20px;
+    }
+
+    .comment {
+      font-size: 22px;
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+
+    .past-list {
+      border: 1px solid #ccc;
+      padding: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">My Profile</a>
+    <a href="#">Recommendation</a>
+    <a href="#">Archive</a>
+  </div>
+
+  <!-- Home Page -->
+  <div class="home">
+    <div class="left-section">
+      <h1>The Mood Mode</h1>
+      <p class="description">
+        This website recommends you fun activities and useful products based on your current mood or health status. Whether you're feeling down, tired, happy, sick, or just want to change your lifestyle, Mood Mode is here to help you feel better.
+      </p>
+      <button class="recommend-btn">Get a recommendation</button>
+    </div>
+    <div class="photo-box">
+      Photo
+    </div>
+  </div>
+
+  <!-- My Profile Page (template area) -->
+  <div class="profile">
+    <!-- Profile content would go here -->
+  </div>
+
+  <!-- Archive Page (template area) -->
+  <div class="archive">
+    <div class="chart">[Health chart here]</div>
+    <div class="comment">Comment: This month you felt sad 5 times and 2 times sick</div>
+    <div class="past-list">My past lists...</div>
+  </div>
+</body>
+</html>

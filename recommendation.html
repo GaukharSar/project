@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations - The Mood Mode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="profile.html">My Profile</a>
+            <a href="recommendation.html" class="active">Recommendation</a>
+            <a href="archive.html">Archive</a>
+        </div>
+    </nav>
+
+    <div class="main-content recommendation-page">
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <i class="fas fa-robot bot-icon"></i>
+                        <p>How are you feeling today?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-options" id="moodOptions">
+                <button onclick="selectMood('sick')" class="option-btn">
+                    <i class="fas fa-thermometer-half"></i> I'm Sick
+                </button>
+                <button onclick="selectMood('tired')" class="option-btn">
+                    <i class="fas fa-bed"></i> I'm Tired
+                </button>
+                <button onclick="selectMood('lose-weight')" class="option-btn">
+                    <i class="fas fa-running"></i> Want to Lose Weight
+                </button>
+                <button onclick="selectMood('gain-weight')" class="option-btn">
+                    <i class="fas fa-dumbbell"></i> Want to Gain Weight
+                </button>
+                <button onclick="selectMood('picnic')" class="option-btn">
+                    <i class="fas fa-umbrella-beach"></i> Going on a Picnic
+                </button>
+                <button onclick="selectMood('sad')" class="option-btn">
+                    <i class="fas fa-frown"></i> I'm Sad
+                </button>
+                <button onclick="selectMood('happy')" class="option-btn">
+                    <i class="fas fa-smile"></i> I'm Happy
+                </button>
+            </div>
+        </div>
+
+        <div class="recommendations-panel" id="recommendationsPanel">
+            <h2>Your Recommendations</h2>
+            <div class="recommendations-widgets" id="recommendationsWidgets">
+                <!-- Widgets will be added here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

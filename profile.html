@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - The Mood Mode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="profile.html" class="active">My Profile</a>
+            <a href="recommendation.html">Recommendation</a>
+            <a href="archive.html">Archive</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-picture-container">
+                    <div class="profile-picture" id="profilePicture">
+                        <img src="default-profile.png" alt="Profile Picture" id="profileImage">
+                        <div class="profile-picture-overlay">
+                            <i class="fas fa-camera"></i>
+                            <span>Change Photo</span>
+                        </div>
+                    </div>
+                    <input type="file" id="profilePictureInput" accept="image/*" style="display: none;">
+                </div>
+                <h2>My Profile</h2>
+            </div>
+
+            <form id="profileForm" class="profile-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="male" required>
+                            <span>Male</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="female">
+                            <span>Female</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="other">
+                            <span>Other</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="1" max="120" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Weight (kg) - Optional</label>
+                    <input type="number" id="weight" name="weight" min="1" max="300" step="0.1">
+                </div>
+
+                <div class="form-group">
+                    <label for="healthGoals">Health Goals</label>
+                    <select id="healthGoals" name="healthGoals" multiple>
+                        <option value="weight-loss">Weight Loss</option>
+                        <option value="weight-gain">Weight Gain</option>
+                        <option value="better-sleep">Better Sleep</option>
+                        <option value="more-energy">More Energy</option>
+                        <option value="stress-reduction">Stress Reduction</option>
+                    </select>
+                    <small>Hold Ctrl/Cmd to select multiple</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="allergies">Allergies/Health Conditions (Optional)</label>
+                    <textarea id="allergies" name="allergies" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="save-profile-btn">Save Profile</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html> 

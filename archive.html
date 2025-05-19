@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive - The Mood Mode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="profile.html">My Profile</a>
+            <a href="recommendation.html">Recommendation</a>
+            <a href="archive.html" class="active">Archive</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="archive-container">
+            <div class="graph-section">
+                <h2>Your Weekly Mood Tracking</h2>
+                <div class="graph-container">
+                    <canvas id="moodGraph"></canvas>
+                </div>
+                <div class="recommendation-box" id="recommendationBox">
+                    <!-- Recommendations will be added here -->
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <h3>Weekly Statistics</h3>
+                <div class="stat-cards">
+                    <div class="stat-card">
+                        <i class="fas fa-heart-broken"></i>
+                        <h4>Sadness Level</h4>
+                        <p id="sadnessLevel">Loading...</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-thermometer-half"></i>
+                        <h4>Sickness Level</h4>
+                        <p id="sicknessLevel">Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="archive.js"></script>
+</body>
+</html> 
